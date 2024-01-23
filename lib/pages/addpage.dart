@@ -337,7 +337,7 @@ class _AddPageState extends State<AddPage> {
                             await ProductService.addProduct(formData);
                         if(!mounted) return;
                         Navigator.pop(context);
-                        await  NotificationService.showNotification( title: widget.user?.name ?? '', body: 'success added $itemName' , payload: 'MAIN');
+                        await  NotificationService.showNotification( title: widget.user?.name ?? 'Jual Murah', body: 'success added $itemName' , payload: 'MAIN');
                         setState(() {
                           isLoading = false;
                         });
